@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*Para convertir de grados centígrados a grados fahrenheit multiplicamos por 9, 
+        le dividimos 5 y a ese resultado le añadimos 32. Para convertir de fahrenheit a centígrados le restamos 32,
+         multiplicamos por 5 y dividimos entre 9. 
+         Pide un valor y pregunta al usuario si quiere convertirlo a centígrados (si escribe C) 
+         o si quiere convertirlo a fahrenheit (si escribe F) y muestra el valor en pantalla. */
+
+         let grados=parseInt(window.prompt("Escribe un valor"));
+         let conversion=window.prompt("Presiona `C´si quiere conventirlo a centígrados ó `F´ si a fahrenheit");
+         
+
+         if (conversion=="C"){
+             grados=((grados-32)*5)/9
+             window.alert(grados + "C")
+         }
+         else {
+             grados=((grados*9)/5)+32
+             window.alert(grados+"F")
+         }
+
+        
+
+    </script>
+</body>
+</html>

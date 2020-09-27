@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let num1 = parseInt(window.prompt("escribe un número"));
+        let num2 = parseInt(window.prompt("escribe otro número"));
+        let num3 = parseInt(window.prompt("escribe un último num"));
+
+
+        let suma = num1 + num2
+        let mensaje = "La suma de los dos primeros es igual al número 3"
+        let mensaje2 = "El número 3 no es el resultado de la suma de los dos primeros"
+
+        if (suma == num3) {
+            console.log("La suma de los dos primeros es igual al número 3");
+            window.alert(mensaje)
+        }
+        else {
+            console.log("El número 3 no es el resultado de la suma de los dos primeros");
+            window.alert(mensaje2)
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+        /* Escribe un programa que pida al usuario tres números 
+        y que diga si la diferencia entre uno de ellos es exactamente 20 menos que uno de los otros.
+         Por ejemplo, si el usuario introduce 20, 40 y 55, el programa dirá que el primer número es 20 menos que el segundo.
+        */
+
+        let num1 = parseInt(window.prompt("escribe un número"));
+        let num2 = parseInt(window.prompt("escribe otro número"));
+        let num3 = parseInt(window.prompt("escribe un último num"));
+
+        let aux1= num2-num1
+        let aux2= num2-num3
+        let aux3=num1-num2
+        let aux4=num1-num3
+        let aux5=num3-num1
+        let aux6=num3-num2
+
+
+        if (aux1=20)
+        {
+            console.log("La diferencia entre" + num2 + "y" + num1+"es 20")
+        }
+        else if(aux2=20) {
+            console.log("La diferencia entre" + num2 + "y" + num3 +"es 20")
+
+        }
+        else if(aux3=20){
+            console.log("La diferencia entre" + num1 + "y" + num2+"es 20")
+
+        }
+        else if(aux4=20){
+            console.log("La diferencia entre" + num1 + "y" + num3+"es 20")
+
+        }
+        else if(aux5=20){
+            console.log("La diferencia entre" + num3 + "y" + num1+"es 20")
+
+        }
+        else if(aux6=20){
+            console.log("La diferencia entre" + num3 + "y" + num2+"es 20")
+
+        }
+
+
+        
+    </script>
+
+
+
+
+        
+
+
+    </body>
+    </html>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*Con if else if: Mostrar en pantalla un menú con varias opciones. Dependiendo de lo que el usuario elija, mostrar en pantalla la selección. Hacerlo tanto con if else como con switch.*/
+        //Pedimos al usuario que elija una de las siguientes opciones
+
+        let opcion1 = window.prompt(`
+                    1 - primer plato
+                    2 - segundo plato
+                    3 - carta vino
+​
+`)
+            .toLowerCase();
+
+
+        let opcion2;
+        if (opcion1 === "primer plato") {
+            opcion2 = window.prompt(`
+    1 - Plato combinado
+    2 - Patatas fritas
+    3 - Sandwiches
+    `);
+
+        } else if (opcion1 === "segundo plato") {
+            opcion2 = window.prompt(`
+    1 - Chuletón
+    2 - Pescado
+    3 - Alitas de pollo
+    `);
+
+        } else if (opcion1 === "carta vino") {
+
+            opcion2 = window.prompt(`
+    1 - Ribera del Duero
+    2 - Rioja
+    3 - Tempranillo
+    `);
+        }
+
+        console.log(opcion2);
+
+    </script>
+</body>
+
+</html>
